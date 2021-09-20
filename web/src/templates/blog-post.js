@@ -1,11 +1,10 @@
-import { graphql } from "gatsby";
-import BlogPost from "../components/blog-post";
 import React from "react";
-import GraphQLErrorList from "../components/graphql-error-list";
-import Layout from "../containers/layout";
-import Container from "../components/container";
-import SEO from "../components/seo";
+import { graphql } from "gatsby";
+import BlogPost from "../components/Blog/BlogPost";
+import GraphQLErrorList from "../components/Blog/graphql-error-list";
 import { toPlainText } from "../lib/helpers";
+import Layout from "../components/Layout";
+import SearchEngineOptimization from "../components/SEO";
 
 export const query = graphql`
   query BlogPostTemplateQuery($id: String!) {
@@ -17,7 +16,9 @@ export const query = graphql`
         title
       }
       mainImage {
-        ...SanityImage
+        asset {
+          gatsbyImageData
+        }
         alt
       }
       title
@@ -48,6 +49,7 @@ export const query = graphql`
             }
             asset {
               _id
+              gatsbyImageData
             }
           }
           name
@@ -62,9 +64,9 @@ const BlogPostTemplate = (props) => {
   const post = data && data.post;
   return (
     <Layout>
-      {errors && <SEO title="GraphQL Error" />}
+      {errors && <SearchEngineOptimization title="GraphQL Error" />}
       {post && (
-        <SEO
+        <SearchEngineOptimization
           title={post.title || "Untitled"}
           description={toPlainText(post._rawExcerpt)}
           image={post.mainImage}
@@ -72,9 +74,9 @@ const BlogPostTemplate = (props) => {
       )}
 
       {errors && (
-        <Container>
+        <div className="container">
           <GraphQLErrorList errors={errors} />
-        </Container>
+        </div>
       )}
 
       {post && <BlogPost {...post} />}

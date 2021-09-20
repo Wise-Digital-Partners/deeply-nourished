@@ -36,7 +36,7 @@ async function createBlogPostPages(graphql, actions) {
     .forEach((edge) => {
       const { id, slug = {}, publishedAt } = edge.node;
       const dateSegment = format(new Date(publishedAt), "yyyy/MM");
-      const path = `/blog/${dateSegment}/${slug.current}/`;
+      const path = `/${slug.current}/`;
 
       createPage({
         path,
@@ -48,4 +48,19 @@ async function createBlogPostPages(graphql, actions) {
 
 exports.createPages = async ({ graphql, actions }) => {
   await createBlogPostPages(graphql, actions);
+};
+
+exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /micromodal/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+  }
 };
