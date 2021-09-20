@@ -68,25 +68,29 @@ const Page = ({ data }) => {
       </Hero>
 
       <section className="relative pt-14 md:pt-32 pb-32 md:pb-44">
-        <GatsbyImage
-          image={data.veggiesTopLeft.childImageSharp.gatsbyImageData}
-          className="absolute -top-14 md:-top-44 -left-20 md:-left-24 w-full md:w-1/2 max-w-[224px] md:max-w-[447px]"
-        />
+        <div className="absolute -top-14 md:-top-44 -left-20 md:-left-24 w-full md:w-1/2 max-w-[224px] md:max-w-[447px]">
+          <GatsbyImage
+            image={data.veggiesTopLeft.childImageSharp.gatsbyImageData}
+          />
+        </div>
 
-        <GatsbyImage
-          image={data.veggiesTopRight.childImageSharp.gatsbyImageData}
-          className="absolute -top-8 md:-top-20 -right-48 md:-right-28 w-full md:w-1/2 max-w-[425px] md:max-w-[549px]"
-        />
+        <div className="absolute -top-8 md:-top-20 -right-48 md:-right-28 w-full md:w-1/2 max-w-[425px] md:max-w-[549px]">
+          <GatsbyImage
+            image={data.veggiesTopRight.childImageSharp.gatsbyImageData}
+          />
+        </div>
 
-        <GatsbyImage
-          image={data.veggiesBottomLeft.childImageSharp.gatsbyImageData}
-          className="absolute bottom-0 md:bottom-0 -left-24 md:-left-32 w-full md:w-1/2 max-w-[260px] md:max-w-[519px]"
-        />
+        <div className="absolute bottom-0 md:bottom-0 -left-24 md:-left-32 w-full md:w-1/2 max-w-[260px] md:max-w-[519px]">
+          <GatsbyImage
+            image={data.veggiesBottomLeft.childImageSharp.gatsbyImageData}
+          />
+        </div>
 
-        <GatsbyImage
-          image={data.veggiesBottomRight.childImageSharp.gatsbyImageData}
-          className="absolute -bottom-20 md:-bottom-36 -right-32 md:-right-60 w-full md:w-2/3 max-w-[309px] md:max-w-[618px]"
-        />
+        <div className="absolute -bottom-20 md:-bottom-36 -right-32 md:-right-60 w-full md:w-2/3 max-w-[309px] md:max-w-[618px]">
+          <GatsbyImage
+            image={data.veggiesBottomRight.childImageSharp.gatsbyImageData}
+          />
+        </div>
 
         <div className="absolute bottom-20 md:bottom-0 -left-16 md:-left-20 w-full md:w-1/2 max-w-[121px] md:max-w-[241px]">
           <ParallaxProvider>
