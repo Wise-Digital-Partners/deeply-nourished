@@ -272,38 +272,38 @@ export const query = graphql`
       relativePath: { eq: "home/2.0 Veggies top left.png" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 447)
+        gatsbyImageData(layout: CONSTRAINED, width: 447, placeholder: NONE)
       }
     }
     veggiesTopRight: file(
       relativePath: { eq: "home/2.1 Veggies top right.png" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 549)
+        gatsbyImageData(layout: CONSTRAINED, width: 549, placeholder: NONE)
       }
     }
     veggiesBottomLeft: file(
       relativePath: { eq: "home/4.0 Veggies bottom left.png" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 519)
+        gatsbyImageData(layout: CONSTRAINED, width: 519, placeholder: NONE)
       }
     }
     veggiesBottomRight: file(
       relativePath: { eq: "home/4.1 Veggie bottom right.png" }
     ) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 618)
+        gatsbyImageData(layout: CONSTRAINED, width: 618, placeholder: NONE)
       }
     }
     cucumber: file(relativePath: { eq: "home/Cucumber isolated.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 225)
+        gatsbyImageData(layout: CONSTRAINED, width: 225, placeholder: NONE)
       }
     }
     onion: file(relativePath: { eq: "home/Onion Isolated.png" }) {
       childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 241)
+        gatsbyImageData(layout: CONSTRAINED, width: 241, placeholder: NONE)
       }
     }
   }

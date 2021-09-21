@@ -55,7 +55,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
           <HeadingTag>{heading || "How it Works"}</HeadingTag>
         </header>
 
-        <div className="grid md:grid-cols-4 gap-y-6 md:gap-y-10 md:gap-x-6 text-center max-w-[280px] md:max-w-none mx-auto">
+        <div className="grid md:grid-cols-4 gap-y-8 md:gap-y-10 md:gap-x-6 text-center max-w-[280px] md:max-w-none mx-auto">
           {content.map((content, i) => {
             return (
               <div key={i}>
