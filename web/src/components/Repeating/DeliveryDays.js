@@ -21,7 +21,7 @@ const ValueProps = ({ className }) => {
     <section className={`${className || "mb-20 md:mb-32"}`}>
       <div className="container">
         <div className="grid md:grid-cols-2 gap-y-10 md:gap-x-10 lg:gap-x-20 text-center">
-          <div className="bg-secondary-100 border border-secondary-500 rounded-lg p-5 md:p-10">
+          <div className="bg-secondary-100 border border-secondary-500 rounded-lg p-6 md:p-10">
             <div className="mb-2">
               <img
                 src={data.mondayIcon.publicURL}
@@ -36,7 +36,7 @@ const ValueProps = ({ className }) => {
             </p>
           </div>
 
-          <div className="bg-tertitary-50 border border-gray-100 rounded-lg p-5 md:p-10">
+          <div className="bg-tertitary-50 border border-gray-100 rounded-lg p-6 md:p-10">
             <div className="mb-2">
               <img
                 src={data.wednesdayIcon.publicURL}

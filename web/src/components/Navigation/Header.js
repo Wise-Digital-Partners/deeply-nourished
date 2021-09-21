@@ -22,14 +22,16 @@ const Header = ({
       offcanvasNavigation = document.querySelector("#offcanvas-navigation"),
       bodyContent = document.querySelector("#body-content");
 
+    offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
+
     const handleLoad = () => {
       // calculate #offcanvas-navigation menu offset top
-      offcanvasNavigation.style.top = siteNavigation.offsetHeight + "px";
+      offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
     };
 
     const handleResize = () => {
       // calculate #offcanvas-navigation offset top on resize
-      offcanvasNavigation.style.top = siteNavigation.offsetHeight + "px";
+      offcanvasNavigation.style.top = mainNavigation.offsetHeight + "px";
     };
 
     const handleScroll = () => {

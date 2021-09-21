@@ -51,7 +51,7 @@ const Page = ({ data }) => {
 
       <Hero
         backgroundImages={heroImages}
-        padding="pt-10 md:pt-60 pb-76 md:pb-64"
+        padding="pt-24 md:pt-60 pb-76 md:pb-64"
       >
         <header className="max-w-2xl">
           <p className="font-heading text-mobile-7xl md:text-7xl text-gray-900 font-bold mb-3 md:mb-3">

@@ -69,7 +69,7 @@ const MainNav = ({
     initialLogo = data.lightLogo.publicURL;
     stickyLogo = data.darkLogo.publicURL;
     mobileLogo = data.mobileLogo.publicURL;
-    className = "md:absolute";
+    className = "absolute";
   } else {
     initialLogo = data.darkLogo.publicURL;
     stickyLogo = data.darkLogo.publicURL;
@@ -165,11 +165,20 @@ const MainNav = ({
             </div>
 
             <div className={`hidden ${scrolled && "!block"}`}>
-              <img
-                src={stickyLogo}
-                alt="Deeply Nourished Logo"
-                className="w-[145px] md:w-[200px]"
-              />
+              <div className="hidden lg:block">
+                <img
+                  src={stickyLogo}
+                  alt="Deeply Nourished Logo"
+                  className="w-[145px] md:w-[200px]"
+                />
+              </div>
+              <div className="lg:hidden">
+                <img
+                  src={mobileLogo}
+                  alt="Deeply Nourished Logo"
+                  className="w-[33px]"
+                />
+              </div>
             </div>
           </AniLink>
         </div>
