@@ -89,12 +89,12 @@ const Page = ({ data }) => {
         imageAlignment="right"
         className="mb-20 md:mb-32"
       >
-        <h1>Easy Online Ordering</h1>
+        <h1>Order. Eat. Repeat.</h1>
         <p>
-          Start by selecting the meals you’d like Chef Alec to prepare and then
-          choose a Monday or Wednesday delivery. He’ll source fresh ingredients,
-          prep and cook each meal, then box them up for front-door delivery.
-          It’s that simple!
+          Check out the meals, make your picks, and select a delivery day. Chef
+          Alec Hurley will prepare and personally deliver your healthy,
+          delicious dishes right to your door. Then simply heat and eat when
+          ready!
         </p>
         <ButtonSolid href="#" outboundLink={true} text="Start an Order" />
       </Hero>

@@ -84,10 +84,10 @@ const Page = ({ data }) => {
       >
         <h1>Meal Prep Done Differently</h1>
         <p>
-          Chef Alec Hurley’s food philosophy is simple—you get fresh, seasonal,
-          flavor-infused meals made only with local, organic ingredients.
-          They’re prepared with a healthy body in mind and packaged with 100%
-          compostable boxes to protect the environment.
+          Fresh, seasonal, flavor-infused meals made only with local, organic
+          ingredients—that’s Chef Alec Hurley’s food philosophy. Each meal is
+          prepared with a healthy body in mind and packaged with 100%
+          compostable boxes for an eco-friendly footprint.
         </p>
         <ButtonSolid href="#" outboundLink={true} text="Start an Order" />
       </Hero>
@@ -216,7 +216,7 @@ const Page = ({ data }) => {
               >
                 <h3 className="mb-0">With Love For Mother Earth</h3>
                 <p className="mb-0">
-                  You’re helping us help the plant. Your ready-to-go,
+                  You’re helping us help the planet. Your ready-to-go,
                   heat-and-eat meals are packaged in 100% compostable boxes.
                   They’ll keep plastics out of the environment and their
                   chemicals from ending up in our food and water.

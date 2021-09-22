@@ -21,7 +21,7 @@ const Page = ({ data }) => {
       <section className="pt-16 md:pt-32 mb-20 md:mb-32">
         <div className="container">
           <header className="text-center max-w-[870px] mx-auto mb-10 md:mb-12">
-            <h1>Private Events</h1>
+            <h1>Private Chef for Events</h1>
             <p className="font-heading text-lg md:text-2xl">
               Elevate your next San Diego-area event with seasonally-inspired
               dishes your guests will delight over. Whether it’s a small
@@ -37,7 +37,7 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-12 gap-y-8 items-center">
             <div className="md:col-start-1 md:col-span-4 order-2 md:order-1">
-              <h2>Dinner Parties</h2>
+              <h2>Throw A Dinner Party</h2>
               <p>
                 Transform your dinner party into a tasting adventure with
                 private catering by Chef Alec. Your guests will enjoy fresh
@@ -67,7 +67,7 @@ const Page = ({ data }) => {
               />
             </div>
             <div className="md:col-end-13 md:col-span-4">
-              <h2>Event Catering</h2>
+              <h2>Cater Your Next Occasion</h2>
               <p>
                 Create an unforgettable event featuring exquisitely prepared
                 dishes made with locally sourced, in-season ingredients. Get

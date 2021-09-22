@@ -27,7 +27,7 @@ const ValueProps = ({ className, headingLevel, heading }) => {
     {
       icon: data.icon1.publicURL,
       heading: "Simple & Seasonal",
-      text: "You get simple, seasonally inspired menus prepared with a healthy body in mind",
+      text: "You get simple, seasonally inspired menus prepared with a healthy body in mind.",
     },
     {
       icon: data.icon2.publicURL,

@@ -24,11 +24,12 @@ const About = ({ className, headingLevel }) => {
       <div className="container">
         <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-8 items-center">
           <div className="order-2 md:order-1">
-            <HeadingTag>Supported Diets</HeadingTag>
+            <HeadingTag>Diet-Friendly Meals</HeadingTag>
             <p>
-              Are you on a special diet? All menu items fit a healthy lifestyle,
-              and whether it's vegan, vegetarian, keto or paleo, each can also
-              be personalized especially for you. Just ask!
+              Are you on a special diet? All of Deeply Nourished’s organic meal
+              prep items fit a healthy lifestyle. Whether it's vegan,
+              vegetarian, keto or paleo, each can also be personalized
+              especially for you. Just ask!
             </p>
             <ButtonSolid href="#" outboundLink={true} text="Start Your Order" />
           </div>

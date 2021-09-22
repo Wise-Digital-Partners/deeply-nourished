@@ -98,11 +98,11 @@ const Page = ({ data }) => {
         <div className="container">
           <header className="text-center max-w-[870px] mx-auto mb-10 md:mb-12">
             <p className="font-heading text-lg md:text-2xl mb-0">
-              Elevate your next San Diego-area event with seasonally-inspired
-              dishes your guests will delight over. Whether it’s a small
-              gathering or an elegant, multi-course affair, Chef Alec Hurley
-              delivers, bringing his 18+ years of experience and extensive
-              culinary training to the table.
+              Your next San Diego dinner party just got an upgrade. Alec Hurley
+              is a San Diego-based personal chef with 18+ years of experience
+              and extensive culinary training. Infuse your next dinner party
+              with fabulous cuisine made with natural ingredients and inspired
+              by ancient, timeless wisdom.
             </p>
           </header>
         </div>
@@ -159,7 +159,7 @@ const Page = ({ data }) => {
         <div className="container">
           <div className="grid md:grid-cols-12 md:gap-x-10 lg:gap-x-12 gap-y-8 items-center">
             <div className="md:col-start-1 md:col-span-4 order-2 md:order-1">
-              <h2>Beverage pairings</h2>
+              <h2>Beverage Pairings</h2>
               <p>
                 Looking to elevate your next dinner party? We pair meals
                 featuring local, organic, healthy ingredients with fine wines

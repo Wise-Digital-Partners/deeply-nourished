@@ -31,8 +31,8 @@ const ValueProps = ({ className }) => {
             </div>
             <p className="heading-three mb-1 md:mb-3.5">Monday Deliveries</p>
             <p className="text-sm md:text-base mb-0">
-              For Monday deliveries all orders must be placed by 11:59pm on the
-              preceding Friday.
+              For delivery on Monday, place your meal prep order by 11:59 p.m.
+              on the preceding Friday.
             </p>
           </div>
 
@@ -46,8 +46,8 @@ const ValueProps = ({ className }) => {
             </div>
             <p className="heading-three mb-1 md:mb-3.5">Wednesday Deliveries</p>
             <p className="text-sm md:text-base mb-0">
-              For Wednesday deliveries all orders must be placed by 11:59pm on
-              the preceding Monday.
+              For delivery on Wednesday, place your meal prep order by 11:59
+              p.m. on the preceding Monday.
             </p>
           </div>
         </div>

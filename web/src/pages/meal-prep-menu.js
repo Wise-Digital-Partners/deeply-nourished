@@ -224,7 +224,7 @@ const Page = ({ data }) => {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-5 lg:gap-x-10 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-3">
             {filteredProducts.map((meal, i) => {
               return (
                 <button
@@ -232,13 +232,13 @@ const Page = ({ data }) => {
                   data-modal-open="modal-meals"
                   onClick={() => setSlideIndex(meal.id)}
                   key={i}
-                  className="group relative text-left shadow-4xl md:shadow-none bg-white md:bg-transparent p-3.5 md:px-0"
+                  className="text-left shadow-4xl md:shadow-none md:hover:shadow-4xl bg-white pt-3 px-3 pb-5"
                 >
                   <div className="overflow-hidden mb-5">
                     <GatsbyImage
                       image={meal.image}
                       alt={meal.title}
-                      className="mx-auto w-full transform scale-100 md:group-hover:scale-110 transition-all duration-500 ease-linear"
+                      className="w-full"
                     />
                   </div>
                   <div className="decorative-text mb-2">{meal.season} Menu</div>

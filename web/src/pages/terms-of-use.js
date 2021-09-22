@@ -87,7 +87,7 @@ const Page = () => {
           <h3>5. Revisions and Errata</h3>
           <p>
             The materials appearing on Deeply Nourished's web site could include
-            technical, typographical, or photographic errors. Thistle Financial
+            technical, typographical, or photographic errors. Deeply Nourished
             does not warrant that any of the materials on its web site are
             accurate, complete, or current. Deeply Nourished may make changes to
             the materials contained on its web site at any time without notice.

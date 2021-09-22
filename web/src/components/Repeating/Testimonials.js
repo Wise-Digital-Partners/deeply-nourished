@@ -10,14 +10,14 @@ import Slider from "../Slider/SliderStandard";
 const StyledSlider = styled.div`
   .slick-prev,
   .slick-next {
-    ${tw`h-14 w-14 bg-transparent border border-solid border-gray-400 hover:border-secondary-700 hover:bg-secondary-700 rounded-full top-auto bottom-0 transform-none`}
+    ${tw`h-14 w-14 bg-transparent border border-solid border-gray-400 hover:border-primary-400 hover:bg-primary-400 rounded-full top-auto bottom-0 transform-none`}
   }
   .slick-dots {
     ${tw`relative flex! items-center justify-center space-x-2 -top-6 mb-0`}
     li {
       ${tw`h-2.5 w-2.5 rounded-full bg-gray-400 mr-0 transition-all duration-300 ease-linear`}
       &.slick-active {
-        ${tw`bg-secondary-700`}
+        ${tw`bg-primary-400`}
       }
     }
   }
@@ -73,7 +73,7 @@ const Testimonial = ({ className, headingLevel }) => {
     },
     {
       quote:
-        "Chef Alec is beyond amazing! I was looking for healthy, nutrient-dense (and gluten-free, I have celiac) meals for my postpartum time, and Chef Alec went above and beyond! My husband and I cannot get enough of his meals, and we are going to continue to use him beyond the 4th trimester because he is unbelievable. I never have to worry about cross contamination or something not tasting totally delicious. Even my husband, who prefers gluten, LOVES his meals. He has truly exceeded our expectations, and we couldn't be happier!!",
+        "Chef Alec is beyond amazing! I was looking for healthy, nutrient-dense (and gluten-free, I have celiac) meals for my postpartum time, and Chef Alec went above and beyond! Even my husband, who prefers gluten, LOVES his meals. He has truly exceeded our expectations, and we couldn't be happier!!",
       name: "Rebecca R.",
       platform: data.yelp.childImageSharp.gatsbyImageData,
     },
@@ -81,6 +81,18 @@ const Testimonial = ({ className, headingLevel }) => {
       quote:
         "WOW! I am amazed by Alec in every way. Not only is his cooking AWESOME, but he's great with communication. Super polite and helpful and can calculate macros and build custom meals that are exactly what I want. I would hire him again in an instant!",
       name: "John S.",
+      platform: data.yelp.childImageSharp.gatsbyImageData,
+    },
+    {
+      quote:
+        "WOW! Such a good find. Deeply Nourished has served as a lifeline to me during a difficult season of life. The meals are packed beautifully in compostable packaging, each meal so colorful and generous. Truly a feast for the eyes and nourishment for body and soul. Have I mentioned they're delicious? Every. Single. One.",
+      name: "Gina D.",
+      platform: data.yelp.childImageSharp.gatsbyImageData,
+    },
+    {
+      quote:
+        "We can absolutely taste the quality of food and the care Chef Alec takes when preparing/packing/delivering. I can't believe the amount of flavor he can pack into each generous portion. The veggies are flavorful, the proteins are perfectly cooked, and each sauce/seasoning accompaniment is spot on with great balance.",
+      name: "Jordan T.",
       platform: data.yelp.childImageSharp.gatsbyImageData,
     },
   ];

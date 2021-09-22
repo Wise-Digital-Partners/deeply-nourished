@@ -139,7 +139,7 @@ const Page = ({ data }) => {
               <ul className="styled-check-list">
                 <li>Promote mindfulness</li>
                 <li>Reduce inflammation</li>
-                <li>Lose weight</li>
+                <li>Aid in weight loss</li>
                 <li>Lower your blood pressure</li>
                 <li>Lower your cholesterol</li>
                 <li>Cleanse the body of toxins</li>

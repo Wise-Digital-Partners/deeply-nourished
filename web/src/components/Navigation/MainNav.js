@@ -137,14 +137,14 @@ const MainNav = ({
       } ${headerHasBorder && "border-b border-solid border-gray-300"} ${
         offcanvasOpen ? "" : ""
       } ${
-        scrolled && "!fixed !bg-white top-0 left-0 w-full z-50"
+        scrolled && "!fixed !bg-white top-0 left-0 w-full shadow-3xl z-50"
       } ${className}`}
       role="navigation"
       aria-label="main-navigation"
       offcanvasOpen={offcanvasOpen}
     >
       <div className="container relative flex justify-between items-center">
-        <div className="flex-auto"></div>
+        <div className="flex-auto lg:hidden"></div>
         <div className="flex-auto flex items-center justify-center lg:justify-start">
           <AniLink fade to="/">
             <div className={`${scrolled && "hidden"}`}>
@@ -324,6 +324,8 @@ const MainNav = ({
                                 <AniLink
                                   fade
                                   to={item.href}
+                                  onKeyDown={clickHandler}
+                                  onClick={clickHandler}
                                   className="font-body text-gray-900 hover:text-primary-400"
                                 >
                                   {item.name}
@@ -350,6 +352,8 @@ const MainNav = ({
                                 <AniLink
                                   fade
                                   to={item.href}
+                                  onKeyDown={clickHandler}
+                                  onClick={clickHandler}
                                   className="font-body text-gray-900 hover:text-primary-400"
                                 >
                                   {item.name}

@@ -10,12 +10,12 @@ const Page = () => {
           <h1>Privacy Policy</h1>
           <p>
             Protecting your private information is our priority. This Statement
-            of Privacy applies to https://www.thistle-financial.com, and Thistle
-            Financial and governs data collection and usage. For the purposes of
+            of Privacy applies to https://livedeeplynourished.com, and Deeply
+            Nourished and governs data collection and usage. For the purposes of
             this Privacy Policy, unless otherwise noted, all references to
-            Deeply Nourished include https://www.thistle-financial.com. The
-            Deeply Nourished website is a general informational site. By using
-            the Deeply Nourished website, you consent to the data practices
+            Deeply Nourished include https://livedeeplynourished.com. The Deeply
+            Nourished website is a general informational site. By using the
+            Deeply Nourished website, you consent to the data practices
             described in this statement. 
           </p>
           <h3>Collection of your Personal Information</h3>

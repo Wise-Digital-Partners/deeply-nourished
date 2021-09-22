@@ -24,7 +24,7 @@ const Button = ({
       className={`group relative overflow-hidden border border-solid px-5 py-3 min-w-[160px] h-[42px] md:h-[48px] rounded inline-flex items-center justify-center text-center font-body text-base font-semibold tracking-wide no-underline whitespace-nowrap ${
         altStyle
           ? ""
-          : "text-primary-400 hover:text-white bg-transparent hover:bg-primary-400 border-primary-400"
+          : "text-primary-400 hover:text-white bg-transparent hover:bg-primary-400 border-primary-400 hover:shadow-6xl"
       } ${className || ""}`}
       {...(link ? { fade: "true", to: href } : { href: href })}
       target={target}

@@ -10,14 +10,14 @@ import Slider from "../Slider/SliderStandard";
 const StyledSlider = styled.div`
   .slick-prev,
   .slick-next {
-    ${tw`h-14 w-14 bg-transparent border border-solid border-gray-400 hover:border-secondary-700 hover:bg-secondary-700 rounded-full top-auto bottom-0 transform-none`}
+    ${tw`h-14 w-14 bg-transparent border border-solid border-gray-400 hover:border-primary-400 hover:bg-primary-400 rounded-full top-auto bottom-0 transform-none`}
   }
   .slick-dots {
     ${tw`relative flex! items-center justify-center space-x-2 -top-6 mb-0`}
     li {
       ${tw`h-2.5 w-2.5 rounded-full bg-gray-400 mr-0 transition-all duration-300 ease-linear`}
       &.slick-active {
-        ${tw`bg-secondary-700`}
+        ${tw`bg-primary-400`}
       }
     }
   }
@@ -142,7 +142,7 @@ const Testimonial = ({ className, headingLevel }) => {
                         <div>
                           <cite className="not-italic flex items-center justify-between">
                             <div className="font-heading text-sm uppercase tracking-widest font-semibold">
-                              <span className="text-secondary-700">
+                              <span className="text-primary-400">
                                 {testimonial.name}/
                               </span>
                               {testimonial.location}

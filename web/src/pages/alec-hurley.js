@@ -38,12 +38,13 @@ const Page = ({ data }) => {
         imageAlignment="right"
         className="mb-20 md:mb-32"
       >
-        <h1>Meal Prep Done Differently</h1>
+        <h1>Chef Alec Hurley</h1>
         <p>
-          Chef Alec Hurley’s food philosophy is simple—you get fresh, seasonal,
-          flavor-infused meals made only with local, organic ingredients.
-          They’re prepared with a healthy body in mind and packaged with 100%
-          compostable boxes to protect the environment.
+          Customers LOVE Alec Hurley. He’s a top-rated San Diego-based private
+          chef who creates fantastic meals with locally sourced, organic, and
+          sustainably grown ingredients. He combines his extensive culinary
+          training with the ancient healing wisdom of Ayurveda. What you get is
+          a unique dining experience that feeds the body, mind, and soul.
         </p>
       </Hero>
 

@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       animation: {
-        fadeIn: "fadeIn 0.5s ease-in",
+        fadeIn: "fadeIn 0.75s ease-in",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -31,6 +31,7 @@ module.exports = {
         "3xl": "0px 2px 3px rgba(102, 102, 102, 0.2)",
         "4xl": "0px 0px 12px rgba(0, 0, 0, 0.1)",
         "5xl": "0px 8px 20px rgba(0, 0, 0, 0.12)",
+        "6xl": "0px 2px 8px rgba(0, 0, 0, 0.08)",
       },
       colors: {
         gray: {
