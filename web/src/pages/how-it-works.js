@@ -234,8 +234,8 @@ const Page = ({ data }) => {
                 <h3 className="mb-0">Get Front-Door Delivery</h3>
                 <p className="mb-0">
                   Knock, knock—your meals are here! You get personal meal
-                  delivery by Chef Alec, right to your front door or at your
-                  office.
+                  delivery by Chef Alec and his team, right to your front door
+                  or at your office.
                 </p>
               </motion.div>
             </div>
