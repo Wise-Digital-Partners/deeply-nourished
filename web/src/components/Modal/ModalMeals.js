@@ -51,7 +51,7 @@ const Modal = ({ slideIndex, slides }) => {
           aria-hidden="false"
         >
           <div
-            className="overlay fixed flex items-center justify-center top-0 right-0 left-0 bottom-0 bg-black/50 outline-none"
+            className="overlay fixed flex items-center justify-center top-0 right-0 left-0 bottom-0 bg-black/60 outline-none"
             tabIndex="-1"
             data-modal-close
           >
