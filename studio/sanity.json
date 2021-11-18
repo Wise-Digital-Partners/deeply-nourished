@@ -20,6 +20,7 @@
     "media",
     "@sanity/vision",
     "html-to-portable-text",
+    "sanity-super-pane",
     "order-documents"
   ],
   "parts": [
