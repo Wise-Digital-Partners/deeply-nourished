@@ -33,7 +33,6 @@
     "sanity-plugin-html-to-portable-text": "^0.0.4",
     "sanity-plugin-media": "^1.4.3",
     "sanity-plugin-order-documents": "^0.0.20",
-    "sanity-super-pane": "^1.0.0-alpha.11",
     "styled-components": "^5.3.3"
   }
 }
