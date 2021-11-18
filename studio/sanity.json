@@ -16,7 +16,11 @@
     "@sanity/desk-tool",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
-    "dashboard-widget-netlify"
+    "dashboard-widget-netlify",
+    "media",
+    "@sanity/vision",
+    "html-to-portable-text",
+    "order-documents"
   ],
   "parts": [
     {
