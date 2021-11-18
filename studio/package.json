@@ -22,7 +22,7 @@
     "@sanity/default-login": "^2.7.0",
     "@sanity/desk-tool": "^2.7.4",
     "@sanity/studio-hints": "^2.7.0",
-  
+    "@sanity/vision": "^2.21.9",
     "date-fns": "^2.19.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -33,7 +33,6 @@
     "sanity-plugin-html-to-portable-text": "^0.0.4",
     "sanity-plugin-media": "^1.4.3",
     "sanity-plugin-order-documents": "^0.0.20",
-    "sanity-super-pane": "^1.0.0-alpha.1",
-    "styled-components": "^5.3.3"
+    "sanity-super-pane": "^1.0.0-alpha.1"
   }
 }
