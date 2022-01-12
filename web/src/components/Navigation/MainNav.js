@@ -288,7 +288,8 @@ const MainNav = ({
               className="min-w-0"
             />
             <ButtonSolid
-              href="/meal-prep-menu/"
+              outboundLink
+              href="https://livedeeplynourished.goprep.com/customer/menu"
               text="Shop Meals"
               className="min-w-0"
             />
