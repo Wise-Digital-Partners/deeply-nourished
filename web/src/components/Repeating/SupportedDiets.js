@@ -31,7 +31,11 @@ const About = ({ className, headingLevel }) => {
               vegetarian, keto or paleo, each can also be personalized
               especially for you. Just ask!
             </p>
-            <ButtonSolid href="#" outboundLink={true} text="Start Your Order" />
+            <ButtonSolid
+              href="https://livedeeplynourished.goprep.com"
+              outboundLink={true}
+              text="Start Your Order"
+            />
           </div>
           <div className="order-1 md:order-2">
             <GatsbyImage

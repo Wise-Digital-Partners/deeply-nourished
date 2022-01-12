@@ -77,11 +77,7 @@ const Slider = ({ slideIndex, slides }) => {
                     </div>
                     <div className="heading-four mb-8">{content.title}</div>
                     <p className="text-sm">{content.description}</p>
-                    <ButtonSolid
-                      href="#"
-                      outboundLink={true}
-                      text="Shop Meals"
-                    />
+                    <ButtonSolid href="/meal-prep-menu/" text="Shop Meals" />
                   </div>
                 </div>
               </div>

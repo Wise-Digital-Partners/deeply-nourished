@@ -9,22 +9,22 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const data = useStaticQuery(graphql`
     {
-      fall1: file(relativePath: { eq: "3.0 Food Menu/Fall 1.jpg" }) {
+      winter1: file(relativePath: { eq: "3.0 Food Menu/Winter 1.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      fall2: file(relativePath: { eq: "3.0 Food Menu/Fall 2.jpg" }) {
+      winter2: file(relativePath: { eq: "3.0 Food Menu/Winter 2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      fall3: file(relativePath: { eq: "3.0 Food Menu/Fall 3.jpg" }) {
+      winter3: file(relativePath: { eq: "3.0 Food Menu/Winter 3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      fallIcon: file(relativePath: { eq: "3.0 Food Menu/Fall icon.svg" }) {
+      winterIcon: file(relativePath: { eq: "3.0 Food Menu/Winter.svg" }) {
         publicURL
       }
     }
@@ -32,25 +32,26 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const meals = [
     {
-      season: "Fall",
-      image: data.fall1.childImageSharp.gatsbyImageData,
-      title: "Menu Item Name Lorem Ipsum Dolor Sit Amet",
+      season: "Winter",
+      image: data.winter1.childImageSharp.gatsbyImageData,
+      title: "Stewed White Beans w/ Fresh Herbs & Winter Vegetables",
       description:
-        "Short description of the meal. This can include ways to customize for specific dietary restrictions & preferences. Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus sit amet luctus venenatis, magna fringilla urna, porttitor",
+        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
     {
-      season: "Fall",
-      image: data.fall2.childImageSharp.gatsbyImageData,
-      title: "Menu Item Name Lorem Ipsum Dolor Sit Amet",
+      season: "Winter",
+      image: data.winter2.childImageSharp.gatsbyImageData,
+      title:
+        "Meatloaf w/ Rosemary Balsamic Tomato Glaze, Baby Potatoes & Broccoli",
       description:
-        "Short description of the meal. This can include ways to customize for specific dietary restrictions & preferences. Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus sit amet luctus venenatis, magna fringilla urna, porttitor",
+        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
     {
-      season: "Fall",
-      image: data.fall3.childImageSharp.gatsbyImageData,
-      title: "Menu Item Name Lorem Ipsum Dolor Sit Amet",
+      season: "Winter",
+      image: data.winter3.childImageSharp.gatsbyImageData,
+      title: "Chicken Karahi w/ Broccoli & Wild Rice",
       description:
-        "Short description of the meal. This can include ways to customize for specific dietary restrictions & preferences. Lorem ipsum dolor sit amet, adipiscing elit ut aliquam, purus sit amet luctus venenatis, magna fringilla urna, porttitor",
+        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
   ];
 

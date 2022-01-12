@@ -124,7 +124,7 @@ const Page = ({ data }) => {
               Hurley. Choose organic meal prep delivered right to your door, or
               private catering for a special occasion.
             </p>
-            <ButtonBlob href="#" text="Learn More" />
+            <ButtonBlob href="/alec-hurley/" text="Learn More" />
           </div>
         </div>
       </section>

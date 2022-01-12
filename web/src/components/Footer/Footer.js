@@ -104,7 +104,7 @@ const Footer = ({ hideFooter }) => {
                     ))}
                     <li className="whitespace-nowrap">
                       <a
-                        href="#"
+                        href="https://livedeeplynourished.goprep.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-white hover:text-primary-400 no-underline"

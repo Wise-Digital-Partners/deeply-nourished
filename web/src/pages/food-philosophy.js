@@ -89,7 +89,11 @@ const Page = ({ data }) => {
           prepared with a healthy body in mind and packaged with 100%
           compostable boxes for an eco-friendly footprint.
         </p>
-        <ButtonSolid href="#" outboundLink={true} text="Start an Order" />
+        <ButtonSolid
+          href="https://livedeeplynourished.goprep.com"
+          outboundLink={true}
+          text="Start an Order"
+        />
       </Hero>
 
       <section className="mb-20 md:mb-32 overflow-x-hidden">
