@@ -288,7 +288,7 @@ const Page = ({ data }) => {
 
           <div className="text-center">
             <ButtonSolid
-              href="https://livedeeplynourished.goprep.com"
+              href="https://livedeeplynourished.goprep.com/customer/menu"
               outboundLink={true}
               text="View Full Menu"
             />

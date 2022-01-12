@@ -61,7 +61,11 @@ const Page = ({ data }) => {
             Fresh, organic meals boxed for front-door delivery.
           </p>
           <div className="flex items-center space-x-5">
-            <ButtonSolid href="/meal-prep-menu/" text="Shop Meals" />
+            <ButtonSolid
+              outboundLink
+              href="https://livedeeplynourished.goprep.com/customer/menu"
+              text="Shop Meals"
+            />
             <ButtonGhost modal="modal-contact" text="Contact" />
           </div>
         </header>

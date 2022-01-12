@@ -397,7 +397,11 @@ const MainNav = ({
 
                 <div className="flex justify-center space-x-4">
                   <ButtonGhost modal="modal-contact" text="Contact" />
-                  <ButtonSolid href="/meal-prep-menu/" text="Shop Meals" />
+                  <ButtonSolid
+                    outboundLink
+                    href="https://livedeeplynourished.goprep.com/customer/menu"
+                    text="Shop Meals"
+                  />
                 </div>
               </div>
             </OffCanvas>

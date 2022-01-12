@@ -55,7 +55,11 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
         </p>
       </header>
 
-      <ButtonSolid href="/meal-prep-menu/" text="Shop Meals" />
+      <ButtonSolid
+        outboundLink
+        href="https://livedeeplynourished.goprep.com/customer/menu"
+        text="Shop Meals"
+      />
     </Background>
   );
 };

@@ -79,7 +79,7 @@ const Slider = ({ slideIndex, slides }) => {
                     <p className="text-sm">{content.description}</p>
                     <ButtonSolid
                       outboundLink
-                      href="https://livedeeplynourished.goprep.com/"
+                      href="https://livedeeplynourished.goprep.com/customer/menu/"
                       text="Shop Meals"
                     />
                   </div>
