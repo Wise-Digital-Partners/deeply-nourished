@@ -45,8 +45,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="San Diego Organic Meal Prep & Private Chef | Deeply Nourished"
         description="With Deeply Nourished you get delicious, healthy meals made by Alec Hurley, an acclaimed San Diego organic meal prep and private chef."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -224,12 +224,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Home Page.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Home Page.jpg" }
     ) {
       publicURL
     }

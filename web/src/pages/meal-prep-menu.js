@@ -160,8 +160,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Meal Prep Menu | San Diego | Deeply Nourished"
         description="Nourish your body with a meal prep menu full of chef-inspired, seasonal dishes. They're cooked to flavorful perfection and packed with healthy goodness."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <section className="pt-10 mb-20 md:mb-32">
@@ -309,12 +309,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Meal Prep.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Meal Prep.jpg" }
     ) {
       publicURL
     }

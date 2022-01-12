@@ -24,8 +24,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Alec Hurley | Private Chef | Deeply Nourished"
         description="Customers LOVE Alec Hurley. He’s a top-rated San Diego private chef who creates fabulous meals with locally sourced, organic, and sustainably grown ingredients."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -119,12 +119,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/About.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/About.jpg" }
     ) {
       publicURL
     }

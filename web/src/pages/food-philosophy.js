@@ -68,8 +68,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Food Philosophy | Organic Meal Prep | Deeply Nourished"
         description="Fresh, seasonal, flavor-infused meals made only with local, organic ingredients from the San Diego area—that’s Chef Alec Hurley’s food philosophy."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -267,12 +267,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Food Philosophy.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Food Philosophy.jpg" }
     ) {
       publicURL
     }

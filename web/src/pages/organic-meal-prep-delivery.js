@@ -22,8 +22,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Organic Meal Prep Delivery San Diego | Deeply Nourished"
         description="Enjoy savory dishes made by Alec Hurley, a top private chef in San Diego. You’ll love the convenience of organic meal prep delivery and its health benefits."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -63,12 +63,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Home Page.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Home Page.jpg" }
     ) {
       publicURL
     }

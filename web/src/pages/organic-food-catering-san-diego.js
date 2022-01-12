@@ -74,8 +74,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Organic Food Catering San Diego | Deeply Nourished"
         description="Make an impression at your next San Diego event with organic food catering. Chef Alec Hurley creates dishes infused with flavor and featuring local ingredients."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <Hero
         backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
@@ -177,12 +177,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Catering.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Catering.jpg" }
     ) {
       publicURL
     }

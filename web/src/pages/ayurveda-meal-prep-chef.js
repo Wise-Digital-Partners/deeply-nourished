@@ -106,8 +106,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Ayurveda Meal Prep & Chef | Deeply Nourished"
         description="The Ayurveda diet is being mindful about what you eat—a philosophy that San Diego Chef Alec Hurley believes in. Deeply nourish your body with Ayurveda food."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
 
       <Hero
@@ -312,12 +312,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Ayurveda.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Ayurveda.jpg" }
     ) {
       publicURL
     }

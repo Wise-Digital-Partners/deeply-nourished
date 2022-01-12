@@ -83,8 +83,8 @@ const Page = ({ data }) => {
       <SearchEngineOptimization
         title="Private Chef for Dinner Parties | Deeply Nourished"
         description="Upgrade your next San Diego-area get together with fabulous cuisine made with natural ingredients. Hire Alec Hurley, your private chef for dinner parties."
-        // openGraphImage={data.openGraphImage.publicURL}
-        // twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
+        openGraphImage={data.openGraphImage.publicURL}
+        twitterOpenGraphImage={data.twitterOpenGraphImage.publicURL}
       />
       <Hero
         backgroundImages={data.heroDesktop.childImageSharp.gatsbyImageData}
@@ -233,12 +233,12 @@ const Page = ({ data }) => {
 export const query = graphql`
   {
     openGraphImage: file(
-      relativePath: { eq: "open-graph/facebook/Homepage.jpg" }
+      relativePath: { eq: "open-graph/facebook/Dinner Parties.jpg" }
     ) {
       publicURL
     }
     twitterOpenGraphImage: file(
-      relativePath: { eq: "open-graph/twitter/Homepage.jpg" }
+      relativePath: { eq: "open-graph/twitter/Dinner Parties.jpg" }
     ) {
       publicURL
     }
