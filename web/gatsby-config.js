@@ -145,16 +145,16 @@ module.exports = {
         icon: `static/images/favicon.png`,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-google-tagmanager",
-    //   options: {
-    //     id: "GTM-KR5RXR3",
-    //     includeInDevelopment: true,
-    //     // defaultDataLayer: { platform: "gatsby" },
-    //     // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-    //     // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-    //     // dataLayerName: "YOUR_DATA_LAYER_NAME",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5P6F7JJ",
+        includeInDevelopment: true,
+        // defaultDataLayer: { platform: "gatsby" },
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+      },
+    },
   ],
 };
