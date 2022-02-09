@@ -409,6 +409,18 @@ const MainNav = ({
                         </AccordionItemPanel>
                       </AccordionItem>
                     </li>
+
+                    <li>
+                      <AniLink
+                        fade
+                        to="/testimonials/"
+                        onKeyDown={clickHandler}
+                        onClick={clickHandler}
+                        className="font-heading text-4xl text-gray-900 hover:text-primary-400 font-medium no-underline mb-0 transition-colors duration-300 ease-linear"
+                      >
+                        Reviews
+                      </AniLink>
+                    </li>
                   </Accordion>
                 </ul>
 
