@@ -124,6 +124,10 @@ const MainNav = ({
         name: "Ayurveda",
         href: "/ayurveda-meal-prep-chef/",
       },
+      {
+        name: "Reviews",
+        href: "/testimonials/",
+      },
     ],
   };
 
@@ -279,22 +283,6 @@ const MainNav = ({
                 ))}
               </ul>
             </li>
-
-            <li className="relative">
-              <AniLink
-                fade
-                to="/testimonials/"
-                className={`font-body font-semibold tracking-wider pb-8 ${
-                  scrolled && "text-gray-900"
-                } ${
-                  headerLinkColor === "white"
-                    ? "text-white hover:text-white"
-                    : "text-gray-900 hover:text-primary-400"
-                }`}
-              >
-                Reviews
-              </AniLink>
-            </li>
           </ul>
 
           <div className="hidden lg:inline-flex lg:items-center lg:space-x-4">
@@ -408,18 +396,6 @@ const MainNav = ({
                           </ul>
                         </AccordionItemPanel>
                       </AccordionItem>
-                    </li>
-
-                    <li>
-                      <AniLink
-                        fade
-                        to="/testimonials/"
-                        onKeyDown={clickHandler}
-                        onClick={clickHandler}
-                        className="font-heading text-4xl text-gray-900 hover:text-primary-400 font-medium no-underline mb-0 transition-colors duration-300 ease-linear"
-                      >
-                        Reviews
-                      </AniLink>
                     </li>
                   </Accordion>
                 </ul>
