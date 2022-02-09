@@ -99,7 +99,7 @@ const Page = ({ data }) => {
           <header className="text-center max-w-[870px] mx-auto mb-10 md:mb-12">
             <p className="font-heading text-lg md:text-2xl mb-0">
               Your next San Diego dinner party just got an upgrade. Alec Hurley
-              is a San Diego-based personal chef with 18+ years of experience
+              is a San Diego-based personal chef with 20+ years of experience
               and extensive culinary training. Infuse your next dinner party
               with fabulous cuisine made with natural ingredients and inspired
               by ancient, timeless wisdom.

@@ -26,7 +26,7 @@ const Page = ({ data }) => {
               Elevate your next San Diego-area event with seasonally-inspired
               dishes your guests will delight over. Whether it’s a small
               gathering or an elegant, multi-course affair, Chef Alec Hurley
-              delivers, bringing his 18+ years of experience and extensive
+              delivers, bringing his 20+ years of experience and extensive
               culinary training to the table.
             </p>
           </header>

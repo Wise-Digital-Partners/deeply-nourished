@@ -90,7 +90,7 @@ const Page = ({ data }) => {
           <header className="text-center max-w-[870px] mx-auto mb-10 md:mb-12">
             <p className="font-heading text-lg md:text-2xl mb-0">
               Make a great impression at your next event with private catering
-              from acclaimed San-Diego personal chef Alec Hurley. With 18+ years
+              from acclaimed San-Diego personal chef Alec Hurley. With 20+ years
               of experience and extensive culinary expertise, he creates dishes
               infused with flavor and featuring local, organic ingredients.
             </p>
