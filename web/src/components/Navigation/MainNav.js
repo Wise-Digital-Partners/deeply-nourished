@@ -279,6 +279,22 @@ const MainNav = ({
                 ))}
               </ul>
             </li>
+
+            <li className="relative">
+              <AniLink
+                fade
+                to="/testimonials/"
+                className={`font-body font-semibold tracking-wider pb-8 ${
+                  scrolled && "text-gray-900"
+                } ${
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-900 hover:text-primary-400"
+                }`}
+              >
+                Reviews
+              </AniLink>
+            </li>
           </ul>
 
           <div className="hidden lg:inline-flex lg:items-center lg:space-x-4">

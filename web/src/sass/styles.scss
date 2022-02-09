@@ -9,3 +9,13 @@
 @import "../sass/modal.scss";
 
 @tailwind utilities;
+
+@layer utilities {
+  .col-count-2 {
+    column-count: 2;
+    column-gap: 2.5em;
+  }
+  .break-inside {
+    break-inside: avoid;
+  }
+}
