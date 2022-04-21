@@ -9,22 +9,27 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const data = useStaticQuery(graphql`
     {
-      winter1: file(relativePath: { eq: "3.0 Food Menu/Winter 1.jpg" }) {
+      spring1: file(relativePath: { eq: "3.0 Food Menu/Spring 1.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      winter2: file(relativePath: { eq: "3.0 Food Menu/Winter 2.jpg" }) {
+      spring2: file(relativePath: { eq: "3.0 Food Menu/Spring 2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      winter3: file(relativePath: { eq: "3.0 Food Menu/Winter 3.jpg" }) {
+      spring3: file(relativePath: { eq: "3.0 Food Menu/Spring 3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      winterIcon: file(relativePath: { eq: "3.0 Food Menu/Winter.svg" }) {
+      spring4: file(relativePath: { eq: "3.0 Food Menu/Spring 4.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 564)
+        }
+      }
+      springIcon: file(relativePath: { eq: "3.0 Food Menu/Spring Icon.svg" }) {
         publicURL
       }
     }
@@ -32,26 +37,34 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const meals = [
     {
-      season: "Winter",
-      image: data.winter1.childImageSharp.gatsbyImageData,
-      title: "Stewed White Beans w/ Fresh Herbs & Winter Vegetables",
-      description:
-        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
-    },
-    {
-      season: "Winter",
-      image: data.winter2.childImageSharp.gatsbyImageData,
+      season: "Spring",
+      image: data.spring1.childImageSharp.gatsbyImageData,
       title:
-        "Meatloaf w/ Rosemary Balsamic Tomato Glaze, Baby Potatoes & Broccoli",
+        "Zucchini Noodles w/ Fresh Herb Pesto, Roasted Peppers & Meatballs",
       description:
-        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
     {
-      season: "Winter",
-      image: data.winter3.childImageSharp.gatsbyImageData,
-      title: "Chicken Karahi w/ Broccoli & Wild Rice",
+      season: "Spring",
+      image: data.spring2.childImageSharp.gatsbyImageData,
+      title: "Curry Halibut w/ Quinoa, Spring Greens & Baby Radishes",
       description:
-        "All of our winter menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+    {
+      season: "Spring",
+      image: data.spring3.childImageSharp.gatsbyImageData,
+      title:
+        "Wild Salmon, Creamy Lemon Basil Sauce, Chickpeas & Roasted Artichokes",
+      description:
+        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+    {
+      season: "Spring",
+      image: data.spring4.childImageSharp.gatsbyImageData,
+      title: "Sprouted Chickpea Falafel, Lemon Tahini Sauce & Baby Greens",
+      description:
+        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
   ];
 
