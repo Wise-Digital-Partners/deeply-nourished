@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = "https://www.livedeeplynourished.com/",
+  URL: NETLIFY_SITE_URL = "https://www.livedeeplynourished.com",
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -149,11 +149,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5P6F7JJ",
-        includeInDevelopment: true,
-        // defaultDataLayer: { platform: "gatsby" },
-        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+        includeInDevelopment: false,
       },
     },
   ],
