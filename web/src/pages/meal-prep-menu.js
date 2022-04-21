@@ -137,8 +137,8 @@ const Page = ({ data }) => {
     },
   ];
 
-  const [setSeason, setSeasonState] = useState("Fall");
-  const [setActive, setActiveState] = useState(2);
+  const [setSeason, setSeasonState] = useState("Spring");
+  const [setActive, setActiveState] = useState(4);
   const [setFilters, setFiltersState] = useState(false);
 
   const categoryFilterClickHandler = (category, id) => {
