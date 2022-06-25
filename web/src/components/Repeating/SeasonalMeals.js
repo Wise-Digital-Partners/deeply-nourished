@@ -9,25 +9,34 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const data = useStaticQuery(graphql`
     {
-      spring1: file(relativePath: { eq: "3.0 Food Menu/Spring 1.jpg" }) {
+      summer1: file(relativePath: { eq: "3.0 Food Menu/Summer 1.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      spring2: file(relativePath: { eq: "3.0 Food Menu/Spring 2.jpg" }) {
+      summer2: file(relativePath: { eq: "3.0 Food Menu/Summer 2.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      spring3: file(relativePath: { eq: "3.0 Food Menu/Spring 3.jpg" }) {
+      summer3: file(relativePath: { eq: "3.0 Food Menu/Summer 3.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
       }
-      spring4: file(relativePath: { eq: "3.0 Food Menu/Spring 4.jpg" }) {
+      summer4: file(relativePath: { eq: "3.0 Food Menu/Summer 4.jpg" }) {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
+      }
+      summerIcon: file(relativePath: { eq: "3.0 Food Menu/Summer.svg" }) {
+        publicURL
+      }
+      fallIcon: file(relativePath: { eq: "3.0 Food Menu/Fall icon.svg" }) {
+        publicURL
+      }
+      winterIcon: file(relativePath: { eq: "3.0 Food Menu/Winter.svg" }) {
+        publicURL
       }
       springIcon: file(relativePath: { eq: "3.0 Food Menu/Spring Icon.svg" }) {
         publicURL
@@ -37,34 +46,39 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
 
   const meals = [
     {
-      season: "Spring",
-      image: data.spring1.childImageSharp.gatsbyImageData,
+      id: 0,
+      season: "Summer",
+      image: data.summer1.childImageSharp.gatsbyImageData,
       title:
-        "Zucchini Noodles w/ Fresh Herb Pesto, Roasted Peppers & Meatballs",
+        "Rotisserie Chicken w/ Summer Squash, Fingerlings & Blackberry Mint Sauce",
       description:
-        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+        "All of our summertime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
     {
-      season: "Spring",
-      image: data.spring2.childImageSharp.gatsbyImageData,
-      title: "Curry Halibut w/ Quinoa, Spring Greens & Baby Radishes",
-      description:
-        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
-    },
-    {
-      season: "Spring",
-      image: data.spring3.childImageSharp.gatsbyImageData,
+      id: 1,
+      season: "Summer",
+      image: data.summer2.childImageSharp.gatsbyImageData,
       title:
-        "Wild Salmon, Creamy Lemon Basil Sauce, Chickpeas & Roasted Artichokes",
+        "Rotisserie Chicken w/ Summer Squash, Fingerlings & Blackberry Mint Sauce",
       description:
-        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+        "All of our summertime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
     {
-      season: "Spring",
-      image: data.spring4.childImageSharp.gatsbyImageData,
-      title: "Sprouted Chickpea Falafel, Lemon Tahini Sauce & Baby Greens",
+      id: 2,
+      season: "Summer",
+      image: data.summer3.childImageSharp.gatsbyImageData,
+      title: "Cilantro Lime Chicken, Roasted Potatoes & Mojo Sauce",
       description:
-        "All of our springtime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+        "All of our summertime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+    {
+      id: 3,
+      season: "Summer",
+      image: data.summer4.childImageSharp.gatsbyImageData,
+      title:
+        "Wild Salmon Salad w/ Beets, Cucumber, Chickpeas, Arugula & Sesame Balsamic Dressing",
+      description:
+        "All of our summertime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
   ];
 
@@ -78,7 +92,7 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
             <HeadingTag>{heading || "Sample Menu: Seasonal Fare"}</HeadingTag>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-3 items-start">
             {meals.map((meal, i) => {
               return (
                 <button
