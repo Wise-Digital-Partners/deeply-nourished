@@ -103,7 +103,7 @@ const MainNav = ({
     ],
     privateEvents: [
       {
-        name: "Private Events",
+        name: "Events",
         href: "/private-chef-for-events/",
       },
       {
@@ -239,7 +239,7 @@ const MainNav = ({
                 Private Events
               </AniLink>
               <ul className="absolute top-0 bg-white/80 backdrop-filter backdrop-blur-sm shadow-5xl flex flex-col space-y-5 w-auto invisible group-hover:visible transform -translate-x-8 translate-y-20 group-hover:translate-y-12 opacity-0 group-hover:opacity-100 py-8 px-6 z-10 transition-all duration-300 ease-linear">
-                {navigation.privateEvents.slice(1).map((item) => (
+                {navigation.privateEvents.map((item) => (
                   <li key={item.name} className="whitespace-nowrap">
                     <AniLink
                       fade
@@ -250,6 +250,15 @@ const MainNav = ({
                     </AniLink>
                   </li>
                 ))}
+                <li className="whitespace-nowrap">
+                  <a
+                    href="https://private.chef.tech/t/deeply-nourished"
+                    target="_blank"
+                    className="font-body text-gray-900 hover:text-primary-400 font-semibold tracking-wide"
+                  >
+                    Book Alec
+                  </a>
+                </li>
               </ul>
             </li>
 
@@ -365,6 +374,17 @@ const MainNav = ({
                                 </AniLink>
                               </li>
                             ))}
+                            <li className="whitespace-nowrap">
+                              <a
+                                href="https://private.chef.tech/t/deeply-nourished"
+                                target="_blank"
+                                onKeyDown={clickHandler}
+                                onClick={clickHandler}
+                                className="font-body text-gray-900 hover:text-primary-400"
+                              >
+                                Book Alec
+                              </a>
+                            </li>
                           </ul>
                         </AccordionItemPanel>
                       </AccordionItem>

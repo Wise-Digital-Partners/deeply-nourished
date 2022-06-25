@@ -132,6 +132,15 @@ const Footer = ({ hideFooter }) => {
                         </AniLink>
                       </li>
                     ))}
+                    <li className="whitespace-nowrap">
+                      <a
+                        href="https://private.chef.tech/t/deeply-nourished"
+                        target="_blank"
+                        className="text-sm text-white hover:text-primary-400 no-underline"
+                      >
+                        Book Alec
+                      </a>
+                    </li>
                   </ul>
                 </div>
 

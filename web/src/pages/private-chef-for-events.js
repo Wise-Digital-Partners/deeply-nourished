@@ -46,7 +46,7 @@ const Page = ({ data }) => {
 
               <ButtonBlob
                 href="/private-chef-for-dinner-parties/"
-                text="Learn More"
+                text="Book Alec"
               />
             </div>
             <div className="md:col-end-13 md:col-span-8 order-1 md:order-2 md:ml-auto">

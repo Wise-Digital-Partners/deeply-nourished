@@ -173,6 +173,11 @@ const Page = ({ data }) => {
               Get private catering for everything from intimate dinner parties
               to family-style dinners and elegant affairs.
             </p>
+            <ButtonBlob
+              href="https://private.chef.tech/t/deeply-nourished"
+              outboundLink={true}
+              text="Book Alec"
+            />
           </header>
 
           <div className="grid md:grid-cols-2 md:gap-x-10 lg:gap-x-20 gap-y-4 items-center">

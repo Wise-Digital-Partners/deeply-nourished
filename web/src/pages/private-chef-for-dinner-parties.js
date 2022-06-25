@@ -119,7 +119,11 @@ const Page = ({ data }) => {
                 party, or for an intimate meal for two.
               </p>
 
-              <ButtonSolid modal="modal-contact" text="Plan Your Event" />
+              <ButtonSolid
+                href="https://private.chef.tech/t/deeply-nourished"
+                outboundLink={true}
+                text="Book Alec"
+              />
             </div>
             <div className="md:col-end-13 md:col-span-8 order-1 md:order-2 md:ml-auto">
               <GatsbyImage
@@ -150,7 +154,11 @@ const Page = ({ data }) => {
                 stress-free entertaining for you!
               </p>
 
-              <ButtonSolid modal="modal-contact" text="Plan Your Event" />
+              <ButtonSolid
+                href="https://private.chef.tech/t/deeply-nourished"
+                outboundLink={true}
+                text="Book Alec"
+              />
             </div>
           </div>
         </div>
@@ -167,7 +175,11 @@ const Page = ({ data }) => {
                 event or a culinary-inspired cocktail party.
               </p>
 
-              <ButtonSolid modal="modal-contact" text="Plan Your Event" />
+              <ButtonSolid
+                href="https://private.chef.tech/t/deeply-nourished"
+                outboundLink={true}
+                text="Book Alec"
+              />
             </div>
             <div className="md:col-end-13 md:col-span-8 order-1 md:order-2 md:ml-auto">
               <GatsbyImage

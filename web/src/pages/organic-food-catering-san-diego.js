@@ -109,7 +109,11 @@ const Page = ({ data }) => {
                 or luxurious affair.
               </p>
 
-              <ButtonSolid modal="modal-contact" text="Plan Your Event" />
+              <ButtonSolid
+                href="https://private.chef.tech/t/deeply-nourished"
+                outboundLink={true}
+                text="Book Alec"
+              />
             </div>
             <div className="md:col-end-13 md:col-span-8 order-1 md:order-2 md:ml-auto">
               <GatsbyImage
