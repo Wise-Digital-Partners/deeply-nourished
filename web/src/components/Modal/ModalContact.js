@@ -61,10 +61,10 @@ const Modal = () => {
           >
             <div className="flex justify-between items-center pt-12 pb-4 md:py-4 px-6 border-b border-black-20">
               <a
-                href="tel:808-489-7366"
+                href="tel:6199295811"
                 className="text-primary-400 hover:text-primary-800 font-semibold tracking-wide"
               >
-                <i className="fas fa-phone-alt mr-1"></i> (808) 489-7366
+                <i className="fas fa-phone-alt mr-1"></i>(619) 929-5811
               </a>
               <i
                 className="close fal fa-times text-xl text-black hover:text-primary-400 cursor-pointer transition-all duration-300 ease-linear"
