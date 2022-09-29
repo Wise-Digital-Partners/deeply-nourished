@@ -28,7 +28,23 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
         childImageSharp {
           gatsbyImageData(layout: CONSTRAINED, width: 564)
         }
+      }           
+      fall1: file(relativePath: { eq: "3.0 Food Menu/Fall 1.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 564)
+        }
       }
+      fall2: file(relativePath: { eq: "3.0 Food Menu/Fall 2.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 564)
+        }
+      }
+      fall3: file(relativePath: { eq: "3.0 Food Menu/Fall 3.jpg" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 564)
+        }
+      }
+
       summerIcon: file(relativePath: { eq: "3.0 Food Menu/Summer.svg" }) {
         publicURL
       }
@@ -81,7 +97,33 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
         "All of our summertime menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
     },
   ];
-
+  const fallMeals = [
+    {
+      id: 4,
+      season: "Fall",
+      image: data.fall1.childImageSharp.gatsbyImageData,
+      title: "Cruciferous Veggies & Quinoa, Fresh Herb Ranch & Wild Salmon",
+      description:
+        "All of our fall menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+    {
+      id: 5 ,
+      season: "Fall",
+      image: data.fall2.childImageSharp.gatsbyImageData,
+      title: "Citrus Chicken, Stir Fry Teff & Ginger Almond Butter Sauce",
+      description:
+        "All of our fall menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+    {
+      id: 6,
+      season: "Fall",
+      image: data.fall3.childImageSharp.gatsbyImageData,
+      title:
+        "Salsa Fresca Bowl, Beans & Rice, Sauteed Vegetables & Sweet Plantains",
+      description:
+        "All of our fall menu items fit a healthy lifestyle, and whether it's vegan, vegetarian, keto or paleo, each can also be personalized especially for you. Just ask!",
+    },
+  ];
   const HeadingTag = headingLevel || "h2";
 
   return (
@@ -93,7 +135,7 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
           </header>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-3 items-start">
-            {meals.map((meal, i) => {
+            {fallMeals.map((meal, i) => {
               return (
                 <button
                   aria-label="Modal trigger"
@@ -142,7 +184,7 @@ const SeasonalMeals = ({ className, headingLevel, heading }) => {
         </div>
       </section>
 
-      <ModalMeals slideIndex={slideIndex} slides={meals} />
+      <ModalMeals slideIndex={slideIndex} slides={fallMeals} />
     </>
   );
 };
