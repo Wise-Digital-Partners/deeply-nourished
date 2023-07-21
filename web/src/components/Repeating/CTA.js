@@ -57,7 +57,7 @@ const CTA = ({ heading, headingLevel, subtext, className }) => {
 
       <ButtonSolid
         outboundLink
-        href="https://livedeeplynourished.goprep.com/customer/menu"
+        href="http://livedeeplynourished.sprwt.in/currentmenu/"
         text="Shop Meals"
       />
     </Background>

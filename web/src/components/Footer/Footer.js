@@ -13,7 +13,7 @@ const Footer = ({ hideFooter }) => {
 
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "global/Logo Grayscale.svg" }) {
+      logo: file(relativePath: { eq: "global/Deeply Nourished Footer Logo.png" }) {
         publicURL
       }
     }
@@ -104,7 +104,7 @@ const Footer = ({ hideFooter }) => {
                     ))}
                     <li className="whitespace-nowrap">
                       <a
-                        href="https://livedeeplynourished.goprep.com/customer/menu"
+                        href="http://livedeeplynourished.sprwt.in/currentmenu/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-white hover:text-primary-400 no-underline"

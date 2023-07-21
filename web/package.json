@@ -20,9 +20,9 @@
     "core-js": "^3.15.2",
     "dotenv": "^16.0.1",
     "framer-motion": "^6.3.15",
-    "gatsby": "4.17.1",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^1.5.0",
-    "gatsby-cli": "^4.2.0",
+    "gatsby-cli": "^5.11.0",
     "gatsby-plugin-anchor-links": "^1.1.1",
     "gatsby-plugin-google-tagmanager": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
@@ -72,7 +72,7 @@
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.6",
     "date-fns": "^2.19.0",
-    "gatsby-plugin-advanced-sitemap": "^2.0.0",
+    "gatsby-plugin-advanced-sitemap": "^1.5.4",
     "gatsby-plugin-emotion": "^7.2.0",
     "gatsby-plugin-sanity-image": "^0.11.0",
     "gatsby-plugin-transition-link": "^1.20.5",
@@ -82,6 +82,6 @@
     "react-scroll-parallax": "^3.2.0",
     "sharp": "^0.30.7",
     "tailwindcss": "^3.1.4",
-    "twin.macro": "^2.6.2"
+    "twin.macro": "^3.3.1"
   }
 }

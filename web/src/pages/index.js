@@ -63,7 +63,7 @@ const Page = ({ data }) => {
           <div className="flex items-center space-x-5">
             <ButtonSolid
               outboundLink
-              href="https://livedeeplynourished.goprep.com/customer/menu"
+              href="http://livedeeplynourished.sprwt.in/currentmenu/"
               text="Shop Meals"
             />
             <ButtonGhost modal="modal-contact" text="Contact" />

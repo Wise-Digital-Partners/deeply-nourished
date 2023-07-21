@@ -47,10 +47,10 @@ const MainNav = ({
 
   const data = useStaticQuery(graphql`
     {
-      darkLogo: file(relativePath: { eq: "global/Logo.svg" }) {
+      darkLogo: file(relativePath: { eq: "global/Deeply Nourished New Logo.png" }) {
         publicURL
       }
-      lightLogo: file(relativePath: { eq: "global/Logo.svg" }) {
+      lightLogo: file(relativePath: { eq: "global/Deeply Nourished New Logo.png" }) {
         publicURL
       }
       mobileLogo: file(relativePath: { eq: "global/Logo Simple.svg" }) {
@@ -292,18 +292,34 @@ const MainNav = ({
                 ))}
               </ul>
             </li>
+            <li className={`group relative cursor-pointer ${subMenuHovering3 && "active"}`}>
+              <a
+                data-modal-open="modal-contact"
+                className={`font-body font-semibold tracking-wider pb-8 ${
+                  scrolled && "text-gray-900"
+                } ${
+                  headerLinkColor === "white"
+                    ? "text-white hover:text-white"
+                    : "text-gray-900 hover:text-primary-400"
+                }`}
+              >
+                Contact
+              </a>
+             
+            </li>
           </ul>
 
           <div className="hidden lg:inline-flex lg:items-center lg:space-x-4">
             <ButtonGhost
-              modal="modal-contact"
-              text="Contact"
+              outboundLink
+              href="http://livedeeplynourished.sprwt.in/currentmenu/"
+              text="Shop Meals"
               className="min-w-0"
             />
             <ButtonSolid
               outboundLink
-              href="https://livedeeplynourished.goprep.com/customer/menu"
-              text="Shop Meals"
+              href="http://livedeeplynourished.sprwt.in/subscription"
+              text="Subscription"
               className="min-w-0"
             />
           </div>
