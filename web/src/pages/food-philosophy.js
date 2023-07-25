@@ -90,7 +90,7 @@ const Page = ({ data }) => {
           compostable boxes for an eco-friendly footprint.
         </p>
         <ButtonSolid
-          href="https://livedeeplynourished.goprep.com/customer/menu"
+          href="http://livedeeplynourished.sprwt.in/currentmenu/"
           outboundLink={true}
           text="Start an Order"
         />
