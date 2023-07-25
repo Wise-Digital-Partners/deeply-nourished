@@ -32,7 +32,7 @@ const About = ({ className, headingLevel }) => {
               especially for you. Just ask!
             </p>
             <ButtonSolid
-              href="https://livedeeplynourished.goprep.com/customer/menu"
+              href="http://livedeeplynourished.sprwt.in/currentmenu/"
               outboundLink={true}
               text="Start Your Order"
             />

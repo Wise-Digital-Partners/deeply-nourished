@@ -47,10 +47,10 @@ const MainNav = ({
 
   const data = useStaticQuery(graphql`
     {
-      darkLogo: file(relativePath: { eq: "global/Deeply Nourished New Logo.png" }) {
+      darkLogo: file(relativePath: { eq: "global/Deeply Nourished Logo.png" }) {
         publicURL
       }
-      lightLogo: file(relativePath: { eq: "global/Deeply Nourished New Logo.png" }) {
+      lightLogo: file(relativePath: { eq: "global/Deeply Nourished Logo.png" }) {
         publicURL
       }
       mobileLogo: file(relativePath: { eq: "global/Logo Simple.svg" }) {
@@ -156,7 +156,7 @@ const MainNav = ({
                 <img
                   src={initialLogo}
                   alt="Deeply Nourished Logo"
-                  className="w-[145px] md:w-[200px]"
+                  className="w-[125px] md:w-[156px]"
                 />
               </div>
               <div className="lg:hidden">
@@ -173,7 +173,7 @@ const MainNav = ({
                 <img
                   src={stickyLogo}
                   alt="Deeply Nourished Logo"
-                  className="w-[145px] md:w-[200px]"
+                  className="w-[125px] md:w-[156px]"
                 />
               </div>
               <div className="lg:hidden">
@@ -433,14 +433,20 @@ const MainNav = ({
                         </AccordionItemPanel>
                       </AccordionItem>
                     </li>
+                    
                   </Accordion>
                 </ul>
 
                 <div className="flex justify-center space-x-4">
-                  <ButtonGhost modal="modal-contact" text="Contact" />
+                <ButtonGhost
+              outboundLink
+              href="http://livedeeplynourished.sprwt.in/subscription"
+              text="Subscription"
+              
+            />
                   <ButtonSolid
                     outboundLink
-                    href="https://livedeeplynourished.goprep.com/customer/menu"
+                    href="http://livedeeplynourished.sprwt.in/currentmenu/"
                     text="Shop Meals"
                   />
                 </div>

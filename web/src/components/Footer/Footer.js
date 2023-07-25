@@ -78,7 +78,7 @@ const Footer = ({ hideFooter }) => {
             <div className="lg:col-start-1 lg:col-span-3">
               <div className="flex items-center justify-center md:justify-start">
                 <AniLink fade to="/">
-                  <img src={data.logo.publicURL} alt="Deeply Nourished Logo" />
+                  <img src={data.logo.publicURL} alt="Deeply Nourished Logo" className="w-[125px] md:w-[156px]"/>
                 </AniLink>
               </div>
             </div>

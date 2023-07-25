@@ -97,7 +97,7 @@ const Page = ({ data }) => {
           ready!
         </p>
         <ButtonSolid
-          href="https://livedeeplynourished.goprep.com/customer/menu"
+          href="http://livedeeplynourished.sprwt.in/currentmenu/"
           outboundLink={true}
           text="Start an Order"
         />
