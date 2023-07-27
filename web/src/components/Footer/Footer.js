@@ -13,7 +13,7 @@ const Footer = ({ hideFooter }) => {
 
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "global/Deeply Nourished Footer Logo.png" }) {
+      logo: file(relativePath: { eq: "global/DeeplyNourishedFooterLogo.png" }) {
         publicURL
       }
     }
