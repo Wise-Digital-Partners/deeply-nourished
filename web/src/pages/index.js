@@ -174,7 +174,7 @@ const Page = ({ data }) => {
               to family-style dinners and elegant affairs.
             </p>
             <ButtonBlob
-              href="https://private.chef.tech/t/deeply-nourished"
+              href="https://epicurate.vip/t/deeply-nourished"
               outboundLink={true}
               text="Book Alec"
             />

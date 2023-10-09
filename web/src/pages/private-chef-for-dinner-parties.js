@@ -120,7 +120,7 @@ const Page = ({ data }) => {
               </p>
 
               <ButtonSolid
-                href="https://private.chef.tech/t/deeply-nourished"
+                href="https://epicurate.vip/t/deeply-nourished"
                 outboundLink={true}
                 text="Book Alec"
               />
@@ -155,7 +155,7 @@ const Page = ({ data }) => {
               </p>
 
               <ButtonSolid
-                href="https://private.chef.tech/t/deeply-nourished"
+                href="https://epicurate.vip/t/deeply-nourished"
                 outboundLink={true}
                 text="Book Alec"
               />
@@ -176,7 +176,7 @@ const Page = ({ data }) => {
               </p>
 
               <ButtonSolid
-                href="https://private.chef.tech/t/deeply-nourished"
+                href="https://epicurate.vip/t/deeply-nourished"
                 outboundLink={true}
                 text="Book Alec"
               />

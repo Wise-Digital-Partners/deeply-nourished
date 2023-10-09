@@ -50,7 +50,9 @@ const MainNav = ({
       darkLogo: file(relativePath: { eq: "global/Deeply Nourished Logo.png" }) {
         publicURL
       }
-      lightLogo: file(relativePath: { eq: "global/Deeply Nourished Logo.png" }) {
+      lightLogo: file(
+        relativePath: { eq: "global/Deeply Nourished Logo.png" }
+      ) {
         publicURL
       }
       mobileLogo: file(relativePath: { eq: "global/Logo Simple.svg" }) {
@@ -252,7 +254,7 @@ const MainNav = ({
                 ))}
                 <li className="whitespace-nowrap">
                   <a
-                    href="https://private.chef.tech/t/deeply-nourished"
+                    href="https://epicurate.vip/t/deeply-nourished"
                     target="_blank"
                     className="font-body text-gray-900 hover:text-primary-400 font-semibold tracking-wide"
                   >
@@ -292,7 +294,11 @@ const MainNav = ({
                 ))}
               </ul>
             </li>
-            <li className={`group relative cursor-pointer ${subMenuHovering3 && "active"}`}>
+            <li
+              className={`group relative cursor-pointer ${
+                subMenuHovering3 && "active"
+              }`}
+            >
               <a
                 data-modal-open="modal-contact"
                 className={`font-body font-semibold tracking-wider pb-8 ${
@@ -305,7 +311,6 @@ const MainNav = ({
               >
                 Contact
               </a>
-             
             </li>
           </ul>
 
@@ -392,7 +397,7 @@ const MainNav = ({
                             ))}
                             <li className="whitespace-nowrap">
                               <a
-                                href="https://private.chef.tech/t/deeply-nourished"
+                                href="https://epicurate.vip/t/deeply-nourished"
                                 target="_blank"
                                 onKeyDown={clickHandler}
                                 onClick={clickHandler}
@@ -433,17 +438,15 @@ const MainNav = ({
                         </AccordionItemPanel>
                       </AccordionItem>
                     </li>
-                    
                   </Accordion>
                 </ul>
 
                 <div className="flex justify-center space-x-4">
-                <ButtonGhost
-              outboundLink
-              href="http://livedeeplynourished.sprwt.in/subscription"
-              text="Subscription"
-              
-            />
+                  <ButtonGhost
+                    outboundLink
+                    href="http://livedeeplynourished.sprwt.in/subscription"
+                    text="Subscription"
+                  />
                   <ButtonSolid
                     outboundLink
                     href="http://livedeeplynourished.sprwt.in/currentmenu/"
